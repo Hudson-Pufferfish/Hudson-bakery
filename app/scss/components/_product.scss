@@ -1,0 +1,61 @@
+@use '../abstracts/' as *;
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  @include laptop {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.product-card {
+  padding: 2.5rem;
+  cursor: pointer;
+  border-radius: $border-radius;
+  transition: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  @include laptop {
+    padding: 1rem;
+  }
+
+  &__img {
+    position: relative;
+    .btn-small {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+  }
+
+  &:hover .btn-small {
+    opacity: 1;
+  }
+
+  &__price,
+  &__name {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    @include laptop {
+      line-height: 1;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
