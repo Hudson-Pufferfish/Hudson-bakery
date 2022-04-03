@@ -9,12 +9,12 @@
 html {
   font-size: 100%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   html {
     font-size: 80%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   html {
     font-size: 75%;
   }
@@ -223,7 +223,7 @@ header.active {
 .hero .swiper {
   height: 100vh;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .hero .swiper {
     height: unset;
   }
@@ -236,7 +236,7 @@ header.active {
   padding: 0 2rem;
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .hero .swiper .hero__slide {
     padding: 12rem 2rem;
   }
@@ -251,7 +251,7 @@ header.active {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .hero .swiper .hero__slide__txt {
     font-size: 10rem;
     top: 14%;
@@ -281,7 +281,7 @@ header.active {
   left: 100%;
   bottom: -3rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .hero .swiper .hero__slide__img .btn-left {
     left: 80%;
   }
@@ -398,12 +398,12 @@ header.active {
 .btn:hover {
   box-shadow: 0px 4px 23px 8px rgba(104, 104, 172, 0.6);
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   .btn {
     font-size: 2rem;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .btn {
     font-size: 1.5rem;
   }
@@ -451,7 +451,7 @@ header.active {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   .product-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
@@ -471,7 +471,7 @@ header.active {
 .product-card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   .product-card {
     padding: 1rem;
   }
@@ -495,7 +495,7 @@ header.active {
   margin-top: 1rem;
   text-align: center;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
   .product-card__price, .product-card__name {
     line-height: 1;
   }
@@ -514,14 +514,14 @@ header.active {
   grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .about {
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
     padding: 3rem 0;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .about__img {
     position: absolute;
     opacity: 0.3;
@@ -531,7 +531,7 @@ header.active {
   padding-left: 3rem;
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .about__info {
     padding-left: 0;
   }
@@ -539,7 +539,7 @@ header.active {
 .about__info__title, .about__info__description, .about__info__btn {
   margin-top: 3rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .about__info__btn {
     padding-left: 3rem;
   }
@@ -565,12 +565,12 @@ header.active {
   padding-bottom: 3rem;
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .footer__img {
     display: none;
   }
@@ -582,7 +582,7 @@ header.active {
   justify-content: flex-start;
   position: relative;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .footer__menus {
     padding-left: 0;
   }
@@ -616,7 +616,7 @@ header.active {
   font-weight: 700;
   line-height: 1;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .footer__menus .company {
     position: unset;
   }
@@ -633,7 +633,7 @@ header.active {
   transform: rotate(-45deg);
   width: 400px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
   .footer__menus img {
     display: none;
   }
