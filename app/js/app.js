@@ -260,7 +260,7 @@ const paginationEl = document.getElementById('pagination');
 
 let currentPage = 1;
 // responsive row grid
-let rows = window.matchMedia('(min-width: 769px) and (max-width: 1023px)')
+let rows = window.matchMedia('(min-width: 769px) and (max-width: 1365px)')
   .matches
   ? 3
   : 4;
