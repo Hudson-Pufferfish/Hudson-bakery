@@ -76,8 +76,17 @@ const activeTabOrScrollTo = function (
 ) {
   tabSection.addEventListener('click', e => {
     let currentActive = document.querySelector('.nav .active');
-    currentActive.classList.remove('active');
-    e.currentTarget.parentElement.classList.add('active');
+
+    //TODO If currentTarget is Bag tab, open shopping cart
+    if (e.currentTarget === navBag)
+      tabSection.parentElement.classList.toggle('active');
+    // (e.currentTarget !== navBag)
+    else {
+      currentActive.classList.remove('active');
+      e.currentTarget.parentElement.classList.add('active');
+    }
+
+    // Scroll to tabSection if it's not navBag tab
     if (tabSection !== navBag) {
       let section = document.getElementById(sectionSelector).offsetTop;
       window.scrollTo({ top: section, behavior: 'smooth' });
@@ -174,6 +183,8 @@ const productList = [
   },
 ];
 
+// Pagination for Menu Grid
+
 const createProductCard = function (id) {
   const product = productList.find(productItem => {
     return productItem.id === id;
@@ -192,6 +203,14 @@ const createProductCard = function (id) {
   btn.classList.add('btn', 'btn-small');
   btn.innerText = 'Add to Bag';
   productCardImg.append(img, btn);
+
+  btn.addEventListener('click', e => {
+    console.log(id);
+
+    product.counter ??= 0;
+    product.counter++;
+    localStorage.setItem(`Item ${id}`, JSON.stringify(productList[id]));
+  });
 
   productCard.append(productCardImg);
 
@@ -238,6 +257,8 @@ const setUpPagination = function (items, wrapper, rowsPerPage) {
   }
 };
 
+// Pagination Button
+
 const paginationButton = function (page, items) {
   let button = document.createElement('button');
   button.innerText = page;
@@ -267,3 +288,9 @@ let rows = window.matchMedia('(min-width: 769px) and (max-width: 1365px)')
 
 displayList(productList, productGrid, rows, currentPage);
 setUpPagination(productList, paginationEl, rows);
+
+// localStorage for adding items into card
+
+// const addToBag = function () {
+//   localStorage.setItem('Product');
+// };

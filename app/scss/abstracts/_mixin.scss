@@ -1,9 +1,16 @@
 @use './variables' as *;
 
-@mixin flex($alignItem, $justifyContent) {
+@mixin flex(
+  $alignItem: flex-start,
+  $justifyContent: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
   display: flex;
   align-items: $alignItem;
   justify-content: $justifyContent;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
 }
 
 @mixin mobile {

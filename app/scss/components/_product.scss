@@ -54,9 +54,6 @@
 }
 
 .pagination {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center, row, wrap);
   margin-top: 1.5rem;
 }

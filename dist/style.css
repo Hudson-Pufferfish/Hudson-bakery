@@ -152,6 +152,8 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
   height: 100%;
 }
 .header-inner .mobile-toggle {
@@ -172,6 +174,8 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .header-inner .nav > * ~ * {
   margin-left: 3rem;
@@ -197,11 +201,17 @@ header.active {
 .header-inner .nav li:hover {
   color: #6868ac;
 }
+.header-inner .nav li:last-child.active .caret-down i {
+  transform: rotate(180deg);
+  transition: all 0.2s linear;
+}
 @media only screen and (max-width: 600px) {
   .header-inner .nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
     flex-direction: column;
     background-color: #fff;
     position: absolute;
@@ -232,6 +242,8 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   height: 100%;
   padding: 0 2rem;
   position: relative;
@@ -332,6 +344,8 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 @media only screen and (max-width: 600px) {
   .hero .swiper .swiper-slide.swiper-slide-next .hero__slide__img {
@@ -504,9 +518,10 @@ header.active {
 
 .pagination {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 1.5rem;
 }
 
@@ -581,6 +596,8 @@ header.active {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
