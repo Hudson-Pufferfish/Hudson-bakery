@@ -103,84 +103,72 @@ const productList = [
   {
     id: 0,
     image: './assets/cupcake (0).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Cranberries cake',
   },
   {
     id: 1,
     image: './assets/cupcake (1).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Blueberry cake',
   },
   {
     id: 2,
     image: './assets/cupcake (2).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Strawberry cake',
   },
   {
     id: 3,
     image: './assets/cupcake (3).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Mulberry cake',
   },
   {
     id: 4,
     image: './assets/cupcake (4).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Milk cake',
   },
   {
     id: 5,
     image: './assets/cupcake (5).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Caramel cake',
   },
   {
     id: 6,
     image: './assets/cupcake (6).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Vanilla cake',
   },
   {
     id: 7,
     image: './assets/cupcake (7).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Lavender cake',
   },
   {
     id: 8,
     image: './assets/cupcake (8).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Rasberry cake',
   },
   {
     id: 9,
     image: './assets/cupcake (9).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Valentine cake',
   },
   {
     id: 10,
     image: './assets/cupcake (10).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Snowflake cake',
   },
   {
     id: 11,
     image: './assets/cupcake (11).png',
-    addBtn: 'Add to Bag',
     price: '$5.65',
     name: 'Christmas cake',
   },
@@ -202,7 +190,7 @@ const createProductCard = function (id) {
 
   const btn = document.createElement('button');
   btn.classList.add('btn', 'btn-small');
-  btn.innerText = product.addBtn;
+  btn.innerText = 'Add to Bag';
   productCardImg.append(img, btn);
 
   productCard.append(productCardImg);
