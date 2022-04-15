@@ -27,4 +27,6 @@
 
     SwiperJS: https://swiperjs.com/
 
-# Preview
+# Preview/Demo
+
+[Hudson Bakery App](https://hudson-bakery.vercel.app/)
